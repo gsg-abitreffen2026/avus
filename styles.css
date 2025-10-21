@@ -1,4 +1,0 @@
-/* Optional: eigener CSS‑Bereich für zusätzliche Styles außerhalb von Tailwind. */
-body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji'; margin: 24px; }
-main { max-width: 800px; margin: 0 auto; }
-h1 { font-size: 20px; margin-bottom: 12px; }

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Email-Akquise Dashboard</title>
+
+<!-- CSS: correct filename + same folder -->
+<link rel="stylesheet" href="./styles.css?v=20251030" />
+
+<!-- Optional: tiny SVG favicon (silences the warning) -->
+<link rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%23003360'/%3E%3Ctext x='32' y='39' font-size='28' text-anchor='middle' fill='%23ffffff' font-family='Verdana,Arial,sans-serif'%3Eav%3C/text%3E%3C/svg%3E" />
+
+
+
+  <!-- React UMD -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- pdf.js (optional, nur für PDF-Upload) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>
+    // globale Variable, wie im Code erwartet
+    window.pdfjsLib = window['pdfjs-dist/build/pdf'];
+  </script>
+
+
+  <!-- Babel Standalone für JSX -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Nur EINMAL laden, und zwar als Babel/JSX -->
+  <script type="text/babel" data-presets="react,env" src="app.js?v=20251023d"></script>
+</body>
+</html>
